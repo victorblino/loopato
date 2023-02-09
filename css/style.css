@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+
+/* All */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* html and body */
+
+html, body {
+    overflow-x: hidden;
+    background-color: #232323;
+}
+
+/* Div background-start */
+
+div#background-start {
+    background-image: url('../imgs/Background.png');
+}
+
+/* Header Loopato */
+
+header p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    padding: .625rem;
+}
+
+/* Header */
+
+header {
+    padding: .625rem;
+    display: block;
+}
+
+header p {
+    float: left;
+}
+
+header ul li {
+    display: inline;
+    list-style-type: none;
+    float: right;
+    padding: .625rem;
+}
+
+header ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #9C27B0;
+    text-decoration: none;
+}
+
+/* div img-duck */
+
+div#img-duck {
+    background-image: url('../imgs/Patinho.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    padding: 1.25rem;
+    height: 100vh;
+}
+
+/* div exploring */
+
+div#exploring {
+    padding-top: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+div#exploring h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem;
+    font-weight: 900;
+    color: #333333;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+div#exploring p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+div#exploring button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    background-color: #9C27B0;
+    border: none;
+    border-radius: 1.25rem;
+    margin-left: 1.25rem;
+}
+
+/* Section projects */
+
+section#projects {
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.projects h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+section.projects h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+/* div showcase */
+
+div.showcase {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.showcase p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+/* section team */
+
+section.team {
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.team h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+/* img steam */
+
+img#steam {
+    height: 6.25rem
+}
+
+/* hr */
+
+hr {
+    margin: 3.125rem;
+}
+
+/* Section team */
+
+section.team {
+    padding: 1.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.team ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+section.team ul li {
+    max-width: 25%;
+    display: inline;
+    list-style-type: none;
+    float: left;
+    padding: .625rem;
+}
+
+section.team ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+    margin: 50px;
+}
+
+section.team h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+section.team h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    padding: 0;
+}
