@@ -14,10 +14,50 @@ html, body {
     background-color: #232323;
 }
 
+/* Config h1, h2, h3... */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem;
+    font-weight: 900;
+    color: #333333;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
+    padding: 0;
+}
+
 /* Div background-start */
 
 div#background-start {
     background-image: url('../imgs/Background.png');
+    height: 69vh;
 }
 
 /* Header Loopato */
@@ -71,8 +111,7 @@ div#img-duck {
     background-image: url('../imgs/Patinho.png');
     background-repeat: no-repeat;
     background-position: right;
-    padding: 1.25rem;
-    height: 100vh;
+    height: 75vh;
 }
 
 /* div exploring */
@@ -83,15 +122,6 @@ div#exploring {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-div#exploring h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.125rem;
-    font-weight: 900;
-    color: #333333;
-    text-align: center;
-    padding: 1.25rem;
 }
 
 div#exploring p {
@@ -124,24 +154,6 @@ section#projects {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-
-section.projects h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.125rem;
-    font-weight: 900;
-    color: white;
-    text-align: center;
-    padding: 1.25rem;
-}
-
-section.projects h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-weight: 400;
-    color: white;
-    text-align: center;
-    padding: 1.25rem;
 }
 
 /* div showcase */
@@ -209,30 +221,127 @@ section.team ul li img {
     margin: 50px;
 }
 
-section.team h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.125rem;
-    font-weight: 900;
-    color: white;
-    text-align: center;
-    padding: 1.25rem;
+
+/* Wave */
+
+.wave-container {
+    height: 10vh;
+    background-color: #fed42a;
+    position: relative;
 }
 
-section.team h3 {
+.wave-container::before {
+    content: "";
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: -0.3%;
+    left: 0;
+    background-size: auto;
+    background-repeat: repeat no-repeat;
+    background-position: 31vw bottom;
+    background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23232323'/></svg>");
+}
+
+@media(max-width:850px) {
+    .wave-container::before {
+        height: 30px
+    }
+}
+
+/* Form */
+
+form {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+form input {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
-    font-weight: 900;
-    color: white;
+    font-weight: 400;
+    color: #333333;
     text-align: center;
     padding: 1.25rem;
+    border: 1px solid #333333;
+    border-radius: 1.25rem;
+    margin: 1.25rem;
 }
 
-section.team h4 {
+form button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
     color: white;
     text-align: center;
     padding: 1.25rem;
-    padding: 0;
+    background-color: #9C27B0;
+    border: none;
+    border-radius: 1.25rem;
+    margin-left: 1.25rem;
+}
+
+form textarea {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
+    padding: 1.25rem;
+    border: 1px solid #333333;
+    border-radius: 1.25rem;
+    margin: 1.25rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: #fed42a;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: black;
+    text-align: center;
+    padding: .625rem;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    display: inline;
+    list-style-type: none;
+    float: left;
+    padding: .625rem;
+}
+
+footer ul li img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: block;
+}
+
+footer ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #333333;
+    text-align: center;
 }
