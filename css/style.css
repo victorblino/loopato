@@ -163,25 +163,6 @@ div.showcase p {
     padding: 1.25rem;
 }
 
-/* section team */
-
-section.team {
-    padding: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-section.team h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3.125rem;
-    font-weight: 900;
-    color: white;
-    text-align: center;
-    padding: 1.25rem;
-}
-
 /* img steam */
 
 img#steam {
@@ -226,6 +207,15 @@ section.team ul li img {
     border-radius: 50%;
     display: block;
     margin: 50px;
+}
+
+section.team h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.125rem;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    padding: 1.25rem;
 }
 
 section.team h3 {
