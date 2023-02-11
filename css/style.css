@@ -74,7 +74,7 @@ header p {
 /* Header */
 
 header {
-    padding: .625rem;
+    padding: 1.625rem;
     display: block;
 }
 
@@ -166,7 +166,7 @@ div.showcase {
     flex-wrap: wrap;
 }
 
-div.showcase p {
+div.showcase + p  {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
@@ -178,7 +178,9 @@ div.showcase p {
 /* img steam */
 
 img#steam {
-    height: 6.25rem
+    height: 6.25rem;
+    display: block;
+    margin: auto;
 }
 
 /* hr */
@@ -243,23 +245,22 @@ section.team ul li img {
     background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200 134' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 1C19.5523 3 32.2291 5 51.5 9C104.5 19 200 43 300 65C400 88 500 111 600 102C700 93 800 53 900 30C987.526 5 1085.36 -1 1150 0C1169.54 -1 1180.49 0 1200 1V134H1150C1100 134 1000 134 900 134C800 134 700 134 600 134C500 134 400 134 300 134C200 134 100 134 50 134H0V1.98128Z' fill='%23232323'/></svg>");
 }
 
-@media(max-width:850px) {
-    .wave-container::before {
-        height: 30px
-    }
-}
-
 /* Form */
 
-form {
-    padding: 100px;
+form#contact {
+    padding: 3.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
 }
 
-form input {
+.name.email.subject {
+    display: flex;
+    flex-direction: column;
+}
+
+form#contact input {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
@@ -271,7 +272,7 @@ form input {
     margin: 1.25rem;
 }
 
-form button {
+form#contact button {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
@@ -284,7 +285,7 @@ form button {
     margin-left: 1.25rem;
 }
 
-form textarea {
+form#contact textarea {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.25rem;
     font-weight: 400;
@@ -294,6 +295,11 @@ form textarea {
     border: 1px solid #333333;
     border-radius: 1.25rem;
     margin: 1.25rem;
+}
+
+#send {
+    display: block;
+    margin: auto;
 }
 
 /* Footer */
@@ -344,4 +350,8 @@ footer ul li a {
     font-weight: 400;
     color: #333333;
     text-align: center;
+}
+
+button#form {
+    width: 18.125rem;
 }
